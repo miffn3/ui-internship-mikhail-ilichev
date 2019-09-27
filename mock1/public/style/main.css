@@ -4,72 +4,111 @@ body{
   text-align: center;
   color: #3c3c3c;
   font-family: Lato;
-  font-size: 1.29vh;
-  font-weight: 300;
+  font-size: 1.5vh;
+}
+.wrapper{
 }
 
 header{
   height: 100vh;
   background-image: url('.././img/blocks/header/Header_bg.png');
   background-size: cover;
-  display: flex;
+  background-position: center;
 }
 
 .header__container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header__text{
+  margin-top: 5vh;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+  max-height: 6.4h;
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
-.header__text_color-white{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 5vh;
+.header__header{
+  font-size: 54px;
   font-weight: 700;
   margin-top: 9vh;
-  letter-spacing: 0.45vh;
+  letter-spacing: 8.62px;
 }
 
 .header__ellipse{
-  margin: 0 auto;
+  margin-top: 26vh;
   height: 6.3vh;
   width: auto;
   margin-top: 26vh;
 }
 
-.header__text_color-white{
-  margin: 0 auto;
-  margin-top: 5vh;
-  font-size: 1.4vh;
-  font-weight: 400;
-  line-height: 2.7vh;
-  letter-spacing: 0.08vh;
-  max-height: 6.4h;
-  max-width: 900px;
-}
-
 .header__mouse-icon{
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
   margin-bottom: 10.6vh;
 }
-/* 
+
+.header_color-white{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .about-us__container{
-  margin: 0 auto;
-  margin-top: 260px;
-  height: 300px;
-  border-block-color: #000000;
+  max-width: 900px;
+  margin: 15vh auto 15vh auto;
+  border: 2px solid #3c3c3c;
 }
 
 .about-us__header{
-  display: block;
-  margin: 0 auto;
-  padding: 0 70;
-  margin-top: 260px;
-  height: 300px;
-  border-width: 4px;
-  border: solid #000000 1vh;
+margin: -20px auto 0 auto;
+width: 450px;
+font-size: 34px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 8.95px;
+background-color: #ffffff;
 }
 
 .about-us__text{
-  margin-top: 6vh;
-} */
+  margin: 7vh auto 7vh auto;
+  width: 600px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+} 
+
+.services{
+  background-image: url(".././img/blocks/header/Services_layout.png");
+  background-size: cover;
+  background-position: center;
+  height: 488px;
+  padding: 12vh;
+}
+
+.services__container{
+  max-width: 900px;
+  border: 2px solid #ffffff;
+}
+
+.services__header{
+  margin: -20px auto 0 auto;
+  width: 192px;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+}
+
+.services__text{
+  margin: 7vh auto 7vh auto;
+  width: 600px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.89px;
+}
