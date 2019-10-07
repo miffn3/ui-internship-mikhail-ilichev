@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 $wrapperPadding;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
