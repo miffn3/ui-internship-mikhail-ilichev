@@ -1,0 +1,54 @@
+.sign-up {
+  padding: 0;
+  height: 287px;
+  background-color: $specialBackgroundColor;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+
+  &__title {
+    margin-top: 70px;
+    color: $sign-upColor;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    text-align: center;
+  }
+
+  &__sending-form {
+    display: flex;
+    margin-top: 80px;
+    max-width: 400px;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__input {
+    flex-grow: 1;
+    border: none;
+    background: inherit;
+    width: auto;
+    color: $mainTextColor;
+    line-height: 24px;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+  }
+
+  &__send {
+    margin-left: auto;
+    border: none;
+    background: inherit;
+  }
+
+  &__icon {
+    cursor: pointer;
+    width: 32px;
+    height: 17px;
+  }
+
+  &__icon:hover {
+    opacity: .5;
+  }
+}

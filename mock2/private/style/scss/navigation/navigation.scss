@@ -1,0 +1,36 @@
+.navigation {
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+
+  &__item {
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 100px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $mainTextColor;
+    @media screen and (max-width: 1024px) {
+      margin-left: 30px;
+    }
+  }
+
+  &__item:hover {
+    opacity: .5;
+  }
+
+  &__item_logo {
+    margin-left: 0;
+    margin-right: auto;
+    color: $navigationLogo-FooterColor;
+    font-family: Inconsolata;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+
+  &__menu {
+    display: flex;
+  }
+}

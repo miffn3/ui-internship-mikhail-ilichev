@@ -1,31 +1,32 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   box-sizing: border-box;
-  padding: 0 81px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $wrapperPadding;
 
-  &__image {
-    height: auto;
-    max-height: 509px;
-    margin-bottom: 99px;
-    align-self: center;;
+  &_header {
+    padding-bottom: 0;
   }
 
-  &__label {
-    margin-bottom: 28px;
-    color: $labelTextColor;
-    font-family: Ubuntu;
-    font-weight: 300;
-    text-transform: uppercase;
+  &_articles {
+    display: flex;
+    justify-content: space-between;
+    padding: $wrapperPadding $wrapperPadding + 65px;
   }
 
-  &__title {
-    margin-bottom: 34px;
-    font-size: 30px;
+  &_load-more {
+    display: flex;
+    justify-content: center;
   }
 
-  &__text {
-    line-height: 24px;
+  &_footer {
+    padding: 0 $wrapperPadding;
+  }
+}
+ 
+@media screen and (max-width: 1024px) {
+  .container_articles {
+    flex-direction: column;
+    padding: $wrapperPadding;
   }
 }
