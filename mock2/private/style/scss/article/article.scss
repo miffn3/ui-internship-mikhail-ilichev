@@ -23,11 +23,13 @@
   }
 
   &__label {
+    display: block;
     margin-bottom: 28px;
     color: $labelTextColor;
     font-family: Ubuntu;
     font-weight: 300;
     text-transform: uppercase;
+    text-decoration: none;
   }
 
   &__title {
