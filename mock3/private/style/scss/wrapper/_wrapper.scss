@@ -1,0 +1,8 @@
+.wrapper {
+  &_full-screen-view {
+    height: 100vh;
+    background-image: url("../../../public/img/large_background.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
