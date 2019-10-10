@@ -1,0 +1,9 @@
+@mixin font() {
+  
+}
+
+@mixin for-tablet-landscape-down {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
