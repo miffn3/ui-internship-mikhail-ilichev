@@ -25,7 +25,7 @@
   &__label {
     display: block;
     margin-bottom: 28px;
-    color: $color-text-secondary;
+    color: $color-text-label-primary;
     font-family: Ubuntu;
     font-weight: 300;
     text-transform: uppercase;
@@ -38,10 +38,9 @@
     font-size: 30px;
     color: $color-text-primary;
     text-decoration: none;
-  }
-
-  &__title:hover {
-    opacity: 0.5;
+    &:hover{
+      opacity: .5;
+    }
   }
 
   &__text {

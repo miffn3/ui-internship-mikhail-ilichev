@@ -10,7 +10,7 @@
 
   &__title {
     margin-top: 70px;
-    color: $color-text-quaternary;
+    color: $color-text-sign-up-primary;
     font-size: 30px;
     letter-spacing: 0.75px;
     text-align: center;
@@ -46,9 +46,8 @@
     cursor: pointer;
     width: 32px;
     height: 17px;
-  }
-
-  &__icon:hover {
-    opacity: .5;
+    &:hover {
+      opacity: .5;
+    }
   }
 }
