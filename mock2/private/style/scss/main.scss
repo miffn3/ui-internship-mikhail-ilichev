@@ -1,20 +1,4 @@
-$wrapperPadding: 68px;
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
+@import "global/_variables.scss";
 @import "global/_mixins.scss";
 @import "global/_colors.scss";
 @import "container/_container.scss";

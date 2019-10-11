@@ -2,7 +2,7 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-  padding: $wrapperPadding;
+  padding: $wrapper-padding;
 
   &_header {
     padding-bottom: 0;
@@ -11,7 +11,7 @@
   &_articles {
     display: flex;
     justify-content: space-between;
-    padding: $wrapperPadding $wrapperPadding + 65px;
+    padding: $wrapper-padding $wrapper-padding + 65px;
   }
 
   &_load-more {
@@ -20,13 +20,13 @@
   }
 
   &_footer {
-    padding: 0 $wrapperPadding;
+    padding: 0 $wrapper-padding;
   }
 }
- 
- @include for-tablet-landscape-down {
+
+@include for-tablet-landscape-down {
   .container_articles {
     flex-direction: column;
-    padding: $wrapperPadding;
+    padding: $wrapper-padding;
   }
-};
+}
