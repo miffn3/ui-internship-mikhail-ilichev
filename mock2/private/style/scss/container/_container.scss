@@ -24,9 +24,9 @@
   }
 }
  
-@media screen and (max-width: 1024px) {
+ @include for-tablet-landscape-down {
   .container_articles {
     flex-direction: column;
     padding: $wrapperPadding;
   }
-}
+};

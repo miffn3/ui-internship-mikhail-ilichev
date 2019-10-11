@@ -10,20 +10,17 @@
     margin-left: 100px;
     line-height: 24px;
     text-decoration: none;
-    color: $mainTextColor;
-    @media screen and (max-width: 1024px) {
-      margin-left: 30px;
-    }
+    color: $color-text-primary;
   }
 
   &__item:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &__item_logo {
     margin-left: 0;
     margin-right: auto;
-    color: $navigationLogo-FooterColor;
+    color: $color-text-tertiary;
     font-family: Inconsolata;
     font-weight: 700;
     font-size: 30px;
@@ -34,3 +31,9 @@
     display: flex;
   }
 }
+
+@include for-tablet-landscape-down {
+  .navigation__item {
+    margin-left: 30px;
+  }
+};

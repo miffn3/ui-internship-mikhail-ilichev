@@ -1,7 +1,7 @@
 .article {
   max-width: 420px;
   margin: 0 10px;
-  color: $mainTextColor;
+  color: $color-text-primary;
   font-size: 14px;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -25,7 +25,7 @@
   &__label {
     display: block;
     margin-bottom: 28px;
-    color: $labelTextColor;
+    color: $color-text-secondary;
     font-family: Ubuntu;
     font-weight: 300;
     text-transform: uppercase;
@@ -36,12 +36,12 @@
     display: block;
     margin-bottom: 34px;
     font-size: 30px;
-    color: $mainTextColor;
+    color: $color-text-primary;
     text-decoration: none;
   }
 
   &__title:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &__text {
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@include for-tablet-landscape-down {
   .article {
     max-width: 100%;
     margin: 0;
@@ -70,4 +70,4 @@
       margin: 0;
     }
   }
-}
+};
