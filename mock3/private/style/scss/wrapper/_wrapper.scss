@@ -1,8 +1,27 @@
 .wrapper {
+  display: flex;
+  justify-content: center;
+
   &_full-screen-view {
     height: 100vh;
-    background-image: url("../../../public/img/large_background.png");
+    background-image: url("../../../public/img/wrapper/large_background.png");
     background-size: cover;
     background-position: center;
+  }
+
+  &_colored {
+    background-color: $color-primary-background;
+  }
+
+  &_colored-secondary {
+    background-color: $color-secondary-background;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 100%;
   }
 }

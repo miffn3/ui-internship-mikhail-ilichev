@@ -1,0 +1,12 @@
+.button {
+  @include font-settings(Exo, 16px, 400, uppercase, null, 3.2px);
+  padding: 20px 50px;
+  background-color: $color-secondary-text;
+  cursor: pointer;
+  color: $color-white;
+
+  &_round {
+    border-radius: 50%;
+    background-color: $color-secondary-background;
+  }
+}

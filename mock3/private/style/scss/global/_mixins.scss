@@ -1,5 +1,10 @@
-@mixin font() {
-  
+@mixin font-settings( $family, $size, $weight, $case, $height, $spacing) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $case;
+  line-height: $height;
+  letter-spacing: $spacing;
 }
 
 @mixin for-tablet-landscape-down {

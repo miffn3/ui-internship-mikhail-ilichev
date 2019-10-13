@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+
+  &_row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: auto;
+  }
+}

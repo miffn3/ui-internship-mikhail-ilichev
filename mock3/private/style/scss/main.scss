@@ -1,11 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 @import "global/pallette";
 @import "global/_colors.scss";
 @import "global/_mixins.scss";
 @import "wrapper/_wrapper.scss";
+@import "container/_container.scss";
 @import "footer/_footer.scss";
 @import "article/_article.scss";
+@import "button/_button.scss";
