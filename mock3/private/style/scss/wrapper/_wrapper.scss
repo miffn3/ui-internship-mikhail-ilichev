@@ -4,7 +4,8 @@
 
   &_full-screen-view {
     height: 100vh;
-    background-image: url("../../../public/img/wrapper/large_background.png");
+    width: auto;
+    background-image: url("../../../public/img/wrapper/large_background.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -13,15 +14,15 @@
     background-color: $color-primary-background;
   }
 
+  &_multiply-images {
+    background-image: url("../../../public/img/Pen_holder.png"), url("../../../public/img/Earphones.png"), url("../../../public/img/Coffee_Cup.png");
+    background-position: left 8% top 0, right 10% top -9px, right 4% bottom 0;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
   &_colored-secondary {
     background-color: $color-secondary-background;
   }
 
-  &__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    min-width: 100%;
-  }
+  
 }

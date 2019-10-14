@@ -8,7 +8,16 @@
   &_row {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 90px;
     width: 100%;
     min-height: auto;
+  }
+
+  &_small {
+    padding: 190px 150px 160px 150px;
+  }
+
+  &_medium {
+    padding: 140px 190px;
   }
 }

@@ -17,7 +17,7 @@
     @include font-settings(Exo, 16px, 500, uppercase, 50px, 3.2px);
     color: $color-secondary-text;
     &_post-script {
-      @include font-settings(Exo, 14px, 400, null, 75px, .56px);
+      @include font-settings(Exo, 14px, 400, null, inherit, .56px);
       opacity: .6;
       color: $color-primary-text;
     }
@@ -28,6 +28,7 @@
 
   &__title {
     @include font-settings(Exo, 40px, 500, null, 50px, 1.6px);
+    margin: 20px 0;
     &_large {
       @include font-settings(null, 60px, 100, null, 75px, 2.4px);
       white-space: pre-line;
@@ -35,6 +36,7 @@
     }
     &_small {
       @include font-settings(null, 22px, null, null, null, .88px);
+      margin-bottom: 0;
     }
     &_colored {
       color: $color-secondary-text;
@@ -44,7 +46,12 @@
     }
   }
   &__text {
+    margin: 20px 0;
     white-space: pre-line;
+    &_no-margin {
+      margin: 0;
+      white-space: unset;
+    }
   }
 
   &__placeholder {
