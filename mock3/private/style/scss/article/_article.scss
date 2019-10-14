@@ -1,5 +1,6 @@
 .article {
   color: $color-primary-text;
+  margin: 0 20px;
 
   &_centered {
     display: flex;
@@ -8,20 +9,30 @@
     text-align: center;
   }
 
+  &_fixed {
+    max-width: 650px;
+  }
+
   &__text {
-    @include font-settings(Exo, 16px, 500, uppercase, 26px, .64px);
-    opacity: .66;
+    @include font-settings(Exo, 16px, 500, null, 26px, 0.64px);
+    opacity: 0.66;
+    &_comment {
+      @include font-settings(Exo, 16px, 400, null, 26px, 0.64px);
+      opacity: 0.66;
+      color: $color-white;
+      font-style: italic;
+    }
   }
 
   &__label {
-    @include font-settings(Exo, 16px, 500, uppercase, 50px, 3.2px);
+    @include font-settings(Exo, 16px, 500, uppercase, null, 3.2px);
     color: $color-secondary-text;
     &_post-script {
-      @include font-settings(Exo, 14px, 400, null, inherit, .56px);
-      opacity: .6;
+      @include font-settings(Exo, 14px, 400, null, inherit, 0.56px);
+      opacity: 0.6;
       color: $color-primary-text;
     }
-    &_small{
+    &_small {
       @include font-settings(null, null, null, none, null, inherit);
     }
   }
@@ -35,8 +46,7 @@
       text-align: center;
     }
     &_small {
-      @include font-settings(null, 22px, null, null, null, .88px);
-      margin-bottom: 0;
+      @include font-settings(null, 22px, null, null, null, 0.88px);
     }
     &_colored {
       color: $color-secondary-text;
@@ -44,13 +54,17 @@
     &_inverted-color {
       color: $color-white;
     }
+    &_no-margin {
+      margin: 0;
+    }
   }
   &__text {
     margin: 20px 0;
-    white-space: pre-line;
+    &_breaked-lines {
+      white-space: pre-line;
+    }
     &_no-margin {
       margin: 0;
-      white-space: unset;
     }
   }
 

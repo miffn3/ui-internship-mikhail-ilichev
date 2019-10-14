@@ -1,0 +1,42 @@
+.links-section {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include font-settings(Lato, 27px, 400, null, 33.6px, null);
+    margin-bottom: 26px;
+    color: $color-primary-text;
+    &_with-background {
+      position: relative;
+      color: $color-white;
+      &::before {
+        z-index: -1;
+        content: url("../../../public/img/footer/Ex_background.png");
+        position: absolute;
+        left: 0;
+        top: -4px;
+        width: 42px;
+        height: 47px;
+      }
+    }
+  }
+
+  &__link {
+    @include font-settings(Exo, 14px, 400, null, 30px, 0.56px);
+    opacity: 0.56;
+    cursor: pointer;
+    color: $color-primary-text;
+    text-decoration: none;
+    
+    &:hover {
+      opacity: .2;
+    }
+  }
+
+  &__text {
+    @include font-settings(Exo, 14px, 500, null, 26px, 0.56px);
+    width: 231px;
+    opacity: 0.56;
+    color: $color-primary-text;
+  }
+}

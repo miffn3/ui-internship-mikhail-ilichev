@@ -7,6 +7,7 @@
   <meta name="description" content="New design for your product, make it responsive.">
   <title>Mock3</title>
   <link href="https://fonts.googleapis.com/css?family=Exo:100,400,400i,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/css/reset.css">
   <link rel="stylesheet" href="style/css/main.css">
 </head>
@@ -58,44 +59,47 @@
           <h3 class="article__label">
             New features
           </h3>
-          <h2 class="article__title">
+          <h2 class="article__title article__title_no-margin">
             Some awesone features
           </h2>
         </article>
         <div class="container container_row">
           <article class="article article_centered">
             <img src="img/icons/pictures.png" alt="pictures" class="image image_icon">
-            <h3 class="article__title article__title_small">
+            <h3 class="article__title article__title_small article__title_no-margin">
               Some awesone features
             </h3>
             <div class="article__text article__text_no-margin">
-              Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetraaugue.
+              Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a
+              pharetraaugue.
             </div>
           </article>
           <article class="article article_centered">
             <img src="img/icons/airplane.png" alt="pictures" class="image image_icon">
-            <h3 class="article__title article__title_small">
+            <h3 class="article__title article__title_small article__title_no-margin">
               Some awesone features
             </h3>
             <div class="article__text article__text_no-margin">
-              Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.
+              Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra
+              augue.
             </div>
           </article>
           <article class="article article_centered">
             <img src="img/icons/bulb.png" alt="pictures" class="image image_icon">
-            <h3 class="article__title article__title_small">
+            <h3 class="article__title article__title_small article__title_no-margin">
               Some awesone features
             </h3>
             <div class="article__text article__text_no-margin">
-              Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.
+              Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra
+              augue.
             </div>
           </article>
         </div>
       </div>
     </section>
     <section class="wrapper">
-      <div class="container container_row">
-        <img src="img/macbook.png" alt="macbook">
+      <div class="container container_row container_responsive">
+        <img src="img/wrapper/macbook.png" alt="macbook" class="image image_macbook">
         <article class="article">
           <div class="article__label">
             New design
@@ -111,47 +115,47 @@
         </article>
       </div>
     </section>
-    <section class="wrapper">
-      <div class="container">
+    <section class="wrapper wrapper_structured mask">
+      <div class="container container_comments">
         <div class="container container_row">
-          <article class="article">
+          <article class="article article_centered">
             <div class="article__placeholder">
             </div>
-            <div class="atricle__title article__title_small article__title_inverted-color">
+            <div class="article__title article__title_small article__title_inverted-color">
               Jonathon Doe
             </div>
             <div class="article__label article__label_small">
               Co Founder
             </div>
-            <div class="article__text">
+            <div class="article__text article__text_comment">
               “Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id gravida at eget
               metus. Etiasem malesuada magn”
             </div>
           </article>
-          <article class="article">
+          <article class="article article_centered">
             <div class="article__placeholder">
             </div>
-            <div class="atricle__title article__title_small article__title_inverted-color">
+            <div class="article__title article__title_small article__title_inverted-color">
               Jonathon Doe
             </div>
             <div class="article__label article__label_small">
               Co Founder
             </div>
-            <div class="article__text">
+            <div class="article__text article__text_comment">
               “Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id gravida at eget
               metus. Etiasem malesuada magn”
             </div>
           </article>
-          <article class="article">
+          <article class="article article_centered">
             <div class="article__placeholder">
             </div>
-            <div class="atricle__title article__title_small article__title_inverted-color">
+            <div class="article__title article__title_small article__title_inverted-color">
               Jonathon Doe
             </div>
             <div class="article__label article__label_small">
               Co Founder
             </div>
-            <div class="article__text">
+            <div class="article__text article__text_comment">
               “Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id gravida at eget
               metus. Etiasem malesuada magn”
             </div>
@@ -167,8 +171,8 @@
       </div>
     </section>
     <section class="wrapper">
-      <div class="container">
-        <article class="article article_centered">
+      <div class="container container_browser-window">
+        <article class="article article_centered article_fixed">
           <div class="article__label">
             New features
           </div>
@@ -181,11 +185,14 @@
             semper.
           </div>
         </article>
-        <img src="img/browser.png" alt="safari" class="image image_browser">
+        <div class="browser">
+          <div class="browser_background">
+          </div>
+        </div>
       </div>
     </section>
     <section class="wrapper wrapper_colored-secondary">
-      <div class="container">
+      <div class="container container_registration">
         <article class="article article_centered">
           <div class="article__label">
             New features
@@ -194,66 +201,93 @@
             Over 1000 designers are using ...
           </div>
         </article>
-        <form action="#" method="post">
-          <input type="text" placeholder="FULL NAME" required>
-          <input type="email" placeholder="YOUR EMAIL" required>
-          <input type="text" placeholder="PASSWORD" required>
-          <button>
-            Try now
-          </button>
+        <form action="#" method="post" class="registration">
+          <input type="text" placeholder="Full name" required class="registration__input">
+          <input type="email" placeholder="Your email" required class="registration__input">
+          <input type="text" placeholder="Password" required class="registration__input">
+          <div class="registration__button-container">
+            <div class="registration__label">
+              30 days free trial for all.
+            </div>
+            <button class="button button_registration">
+              Try now
+            </button>
+          </div>
         </form>
+        <div class="post-script">
+          By Signing up you agree to our
+          <a href="#" class="post-script__link">
+            terms & Services.
+          </a>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container container_row">
-      <article class="article">
-        <div class="article__title">
-          Start Ex
+      <div class="links-section">
+        <div class="links-section__title">
+          Start <span class="links-section__title_with-background">Ex</span>
         </div>
-        <div class="article__text">
+        <div class="links-section__text">
           Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
           USA & CAN: 1-888-123-4567
           Address: 34 Brokel Rd. NY
         </div>
-      </article>
-      <article class="article">
-        <div class="article__title">
+      </div>
+      <div class="links-section">
+        <div class="links-section__title">
           Support
         </div>
-        <div class="article__text">
+        <a href="#" class="links-section__link">
           Help Center
+        </a>
+        <a href="#" class="links-section__link">
           Get Started
+        </a>
+        <a href="#" class="links-section__link">
           Contact US
-        </div>
-      </article>
-      <article class="article">
-        <div class="article__title">
+        </a>
+      </div>
+      <div class="links-section">
+        <div class="links-section__title">
           About US
         </div>
-        <div class="article__text">
+        <a href="#" class="links-section__link">
           About Us
+        </a>
+        <a href="#" class="links-section__link">
           Terms of Use
+        </a>
+        <a href="#" class="links-section__link">
           Privacy Policy
-        </div>
-      </article>
-      <article class="article">
-        <div class="article__title">
+        </a>
+      </div>
+      <div class="links-section">
+        <div class="links-section__title">
           Get Newsletter
         </div>
-        <form action="" method="post">
-          <input type="text">
-          <button class="button">
-
+        <form action="#" method="post" class="links-section__send-form">
+          <input type="text" placeholder="Email" class="links-section__input">
+          <button class="button button_send">
+            <img src="img/footer/send.svg" alt="send" class="image image_send">
           </button>
         </form>
-        <div class="container container_row">
-          <img src="img/contacts/dribbble.svg" alt="dribbble" class="image image_contact">
-          <img src="img/contacts/facebook.svg" alt="facebook" class="image image_contact">
-          <img src="img/contacts/google-plus.svg" alt="google plus" class="image image_contact">
-          <img src="img/contacts/twitter.svg" alt="twitter" class="image image_contact">
+        <div class="container container_row container_no-margin">
+          <a href="#" class="links-section__link">
+            <img src="img/contacts/dribbble.svg" alt="dribbble" class="image image_contact">
+          </a>
+          <a href="#" class="links-section__link">
+            <img src="img/contacts/facebook.svg" alt="facebook" class="image image_contact">
+          </a>
+          <a href="#" class="links-section__link">
+            <img src="img/contacts/google-plus.svg" alt="google plus" class="image image_contact">
+          </a>
+          <a href="#" class="links-section__link">
+            <img src="img/contacts/twitter.svg" alt="twitter" class="image image_contact">
+          </a>
         </div>
-      </article>
+      </div>
     </div>
   </footer>
 </body>

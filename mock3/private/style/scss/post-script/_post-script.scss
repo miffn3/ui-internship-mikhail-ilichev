@@ -1,0 +1,11 @@
+.post-script {
+  @include font-settings(Exo, 16px, 400, null, null, .64px);
+  margin-top: 50px;
+  opacity: .6;
+  color: $color-primary-background;
+
+  &__link {
+    color: $color-primary-background;
+    text-decoration: underline;
+  }
+}

@@ -15,7 +15,7 @@
   }
 
   &_multiply-images {
-    background-image: url("../../../public/img/Pen_holder.png"), url("../../../public/img/Earphones.png"), url("../../../public/img/Coffee_Cup.png");
+    background-image: url("../../../public/img/wrapper/Pen_holder.png"), url("../../../public/img/wrapper/Earphones.png"), url("../../../public/img/wrapper/Coffee_Cup.png");
     background-position: left 8% top 0, right 10% top -9px, right 4% bottom 0;
     background-repeat: no-repeat, no-repeat, no-repeat;
   }
@@ -24,5 +24,10 @@
     background-color: $color-secondary-background;
   }
 
+  &_structured {
+    background-image: url("../../../public/img/wrapper/structured_background.png");
+    background-size: cover;
+    background-position: center;
+  }
   
 }
