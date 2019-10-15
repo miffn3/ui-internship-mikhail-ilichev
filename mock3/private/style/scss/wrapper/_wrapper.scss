@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  &_full-screen-view {
+    height: 100vh;
+  }
+
+  &_colored {
+    background-color: $color-primary-background;
+  }
+
+  &_multiply-images {
+    background-image: url("../../img/wrapper/Pen_holder.png"),
+      url("../../img/wrapper/Earphones.png"), url("../../img/wrapper/Coffee_Cup.png");
+    background-position: left 8% top 0, right 10% top -9px, right 4% bottom 0;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
+  &_colored-secondary {
+    background-color: $color-secondary-background;
+  }
+
+  &_structured {
+    background-image: url("../../img/wrapper/structured_background.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &_responsive {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(225deg, transparent 65%, #ff6d6d 50%);
+      z-index: -1;
+    }
+  }
+}

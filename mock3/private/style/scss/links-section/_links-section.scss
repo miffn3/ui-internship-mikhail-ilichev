@@ -1,0 +1,77 @@
+.links-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+
+  &__title {
+    @include font-settings(Lato, 27px, 400, null, 33.6px, null);
+    margin-bottom: 26px;
+    color: $color-primary-text;
+
+    &_with-background {
+      position: relative;
+      color: $color-white;
+
+      &::before {
+        z-index: -1;
+        content: url("../../img/footer/Ex_background.png");
+        position: absolute;
+        left: 0;
+        top: -4px;
+        width: 42px;
+        height: 47px;
+      }
+    }
+  }
+
+  &__link {
+    @include font-settings(Exo, 14px, 400, null, 30px, .56px);
+    opacity: .56;
+    cursor: pointer;
+    color: $color-primary-text;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .2;
+    }
+  }
+
+  &__text {
+    @include font-settings(Exo, 14px, 500, null, 26px, .56px);
+    width: 231px;
+    opacity: .56;
+    color: $color-primary-text;
+  }
+
+  &__input {
+    @include font-settings(Exo, 16px, 400, null, 75px, .64px);
+    height: 49px;
+    padding: 0 52px 0 30px;
+    border-radius: 3px;
+    border: 1px solid $color-portait-background;
+    background-color: $color-secondary-input-background;
+    color: $color-black;
+    opacity: .5;
+    outline: 0;
+
+    &::placeholder {
+      text-transform: uppercase;
+    }
+  }
+
+  &__send-form {
+    position: relative;
+  }
+}
+
+@include for-pc-hd-down{
+  .links-section {
+    &__input{
+      width: 140px;
+    }
+
+    &__text {
+      width: 200px;
+    }
+  }
+};

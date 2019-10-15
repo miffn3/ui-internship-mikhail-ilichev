@@ -1,0 +1,81 @@
+.article {
+  color: $color-primary-text;
+  margin: 0 10px;
+
+  &_centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &_fixed {
+    max-width: 650px;
+  }
+
+  &__text {
+    @include font-settings(Exo, 16px, 500, null, 26px, .64px);
+    margin: 20px 0;
+    opacity: .66;
+
+    &_comment {
+      @include font-settings(Exo, 16px, 400, null, 26px, .64px);
+      opacity: .66;
+      color: $color-white;
+      font-style: italic;
+    }
+    
+    &_no-margin {
+      margin: 0;
+    }
+  }
+
+  &__label {
+    @include font-settings(Exo, 16px, 500, uppercase, null, 3.2px);
+    color: $color-secondary-text;
+
+    &_post-script {
+      @include font-settings(Exo, 14px, 400, null, inherit, .56px);
+      opacity: .6;
+      color: $color-primary-text;
+    }
+
+    &_small {
+      @include font-settings(null, null, null, none, null, inherit);
+    }
+  }
+
+  &__title {
+    @include font-settings(Exo, 40px, 500, null, 50px, 1.6px);
+    margin: 20px 0;
+
+    &_large {
+      @include font-settings(null, 60px, 100, null, 75px, 2.4px);
+      white-space: pre-line;
+      text-align: center;
+    }
+
+    &_small {
+      @include font-settings(null, 22px, null, null, null, .88px);
+    }
+
+    &_colored {
+      color: $color-secondary-text;
+    }
+
+    &_inverted-color {
+      color: $color-white;
+    }
+
+    &_no-margin {
+      margin: 0;
+    }
+  }
+
+  &__placeholder {
+    width: 76px;
+    height: 76px;
+    border: 2px solid $color-border;
+    background-color: $color-portait-background;
+  }
+}

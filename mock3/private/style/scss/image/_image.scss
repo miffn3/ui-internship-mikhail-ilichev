@@ -1,0 +1,31 @@
+.image {
+  width: auto;
+
+  &_icon {
+    height: 65px;
+    margin-bottom: 20px;
+  }
+
+  &_logo {
+    height: 85px;
+    filter: invert(100%) sepia(0%) saturate(0%);
+  }
+
+  &_contact {
+    height: 21px;
+  }
+
+  &_macbook {
+    margin-right: 50px;
+  }
+
+  &_send {
+    height: 22px;
+  }
+
+  &_safari {
+    margin-top: 70px;
+    width: 820px;
+    height: 375px;
+  }
+}

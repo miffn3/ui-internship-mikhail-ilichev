@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  width: 100%;
+
+  &_row {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: auto;
+  }
+
+  &_no-margin {
+    margin: 0;
+  }
+
+  &_margin-top {
+    margin-top: 90px;
+  }
+
+  &_small {
+    max-width: 591px;
+    padding: 190px 140px 160px 140px;
+    margin: 0 auto;
+  }
+
+  &_medium {
+    padding: 140px 190px 180px 190px;
+  }
+
+  &_responsive {
+    padding: 90px 6% 90px 3%;
+  }
+
+  &_comments {
+    padding: 90px 7.5%;
+  }
+
+  &_browser-window {
+    position: relative;
+    padding-top: 100px;
+  }
+
+  &_registration {
+    padding: 100px 0;
+  }
+
+  &_relative {
+    position: relative;
+  }
+
+  &_contacts {
+    align-self: center;
+    margin-top: 20px;
+    max-width: 150px;
+  }
+
+  &_footer {
+    align-items: flex-start;
+  }
+}
