@@ -1,4 +1,4 @@
-.registration {
+.registration-form {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -11,12 +11,13 @@
     height: 49px;
     width: 260px;
     margin-right: 30px;
-    padding: 0 10px;
+    padding: 0 30px;
     border-radius: 3px;
     border: 1px solid $color-white;
     box-sizing: border-box;
     background-color: $color-input-background;
     color: $color-white;
+
     &::placeholder {
       @include font-settings(Exo, 16px, 400, uppercase, null, 0.81px);
       opacity: 0.5;
@@ -30,8 +31,9 @@
     margin-bottom: 40px;
     color: $color-primary-background;
     text-align: center;
+
     &::before {
-      content: url("../../../public/img/registration/arrow.png");
+      content: url("../../img/registration/arrow.png");
       position: absolute;
       left: 0;
       top: 35%;
@@ -39,7 +41,17 @@
       height: 41px;
     }
   }
+}
 
-  &__button-container {
+@include for-tablet-landscape-down {
+  .registration-form {
+    &__input {
+      width: 220px;
+    }
+
+    &__label::before{
+      left: -26px;
+      top: 45%;
+    }
   }
 }

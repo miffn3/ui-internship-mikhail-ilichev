@@ -3,14 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
   max-width: 1170px;
   width: 100%;
 
   &_row {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 90px;
     min-height: auto;
   }
 
@@ -18,8 +16,14 @@
     margin: 0;
   }
 
+  &_margin-top {
+    margin-top: 90px;
+  }
+
   &_small {
-    padding: 190px 150px 160px 150px;
+    max-width: 591px;
+    padding: 190px 140px 160px 140px;
+    margin: 0 auto;
   }
 
   &_medium {
@@ -27,18 +31,33 @@
   }
 
   &_responsive {
-    padding: 0 7.5% 90px 3%;
+    padding: 90px 6% 90px 3%;
   }
 
   &_comments {
-    padding: 0 7.5% 90px 7.5%;
+    padding: 90px 7.5%;
   }
 
   &_browser-window {
+    position: relative;
     padding-top: 100px;
   }
 
   &_registration {
-    padding: 100px 0 90px 0;
+    padding: 100px 0;
+  }
+
+  &_relative {
+    position: relative;
+  }
+
+  &_contacts {
+    align-self: center;
+    margin-top: 20px;
+    max-width: 150px;
+  }
+
+  &_footer {
+    align-items: flex-start;
   }
 }

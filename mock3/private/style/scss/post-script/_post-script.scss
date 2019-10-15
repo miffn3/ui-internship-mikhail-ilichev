@@ -7,5 +7,9 @@
   &__link {
     color: $color-primary-background;
     text-decoration: underline;
+
+    &:hover {
+      opacity: .2;
+    }
   }
 }

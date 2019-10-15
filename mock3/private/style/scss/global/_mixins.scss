@@ -5,10 +5,28 @@
   text-transform: $case;
   line-height: $height;
   letter-spacing: $spacing;
-}
+};
 
 @mixin for-tablet-landscape-down {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1180px) {
     @content;
   }
-}
+};
+
+@mixin for-pc-hd-down {
+  @media screen and (max-width: 1303px) {
+    @content;
+  }
+};
+
+@mixin for-laptop-l-landscape {
+  @media screen and (min-width: 1245px ) and (max-width: 1440px) {
+    @content;
+  }
+};
+
+@mixin for-laptop-up {
+  @media screen and (min-width: 1022px ) and (max-width: 1245px) {
+    @content;
+  }
+};

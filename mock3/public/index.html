@@ -15,16 +15,16 @@
 <body>
   <main>
     <section class="wrapper wrapper_full-screen-view">
-      <!-- <video src="https://storage.googleapis.com/coverr-main/mp4%2FIn-The-Clouds.mp4" 
-      class="video"
-      autoplay>
-      </video> -->
+      <video poster="img/wrapper/large_background.jpg" class="video" loop>
+        <source src="https://storage.googleapis.com/coverr-main/mp4%2FIn-The-Clouds.mp4" type="video/mp4" />
+      </video>
       <div class="container">
         <article class="article article_centered">
           <h1 class="article__title article__title_large">There is no other
             platforms for you as like
           </h1>
-          <button class="button button_round"></button>
+          <button onclick="playPauseVideo()" class="button button_round button_play">
+          </button>
           <button class="button">
             Try now
           </button>
@@ -52,6 +52,8 @@
           </div>
         </article>
       </div>
+      <div class="colored-line colored-line_two-lines-block">
+      </div>
     </section>
     <section class="wrapper wrapper_colored wrapper_multiply-images">
       <div class="container container_medium">
@@ -63,9 +65,9 @@
             Some awesone features
           </h2>
         </article>
-        <div class="container container_row">
+        <div class="container container_row container_margin-top">
           <article class="article article_centered">
-            <img src="img/icons/pictures.png" alt="pictures" class="image image_icon">
+            <img src="img/icons/pictures.png" alt="Pictures" class="image image_icon">
             <h3 class="article__title article__title_small article__title_no-margin">
               Some awesone features
             </h3>
@@ -75,7 +77,7 @@
             </div>
           </article>
           <article class="article article_centered">
-            <img src="img/icons/airplane.png" alt="pictures" class="image image_icon">
+            <img src="img/icons/airplane.png" alt="Airplane" class="image image_icon">
             <h3 class="article__title article__title_small article__title_no-margin">
               Some awesone features
             </h3>
@@ -85,7 +87,7 @@
             </div>
           </article>
           <article class="article article_centered">
-            <img src="img/icons/bulb.png" alt="pictures" class="image image_icon">
+            <img src="img/icons/bulb.png" alt="Bulb" class="image image_icon">
             <h3 class="article__title article__title_small article__title_no-margin">
               Some awesone features
             </h3>
@@ -97,9 +99,9 @@
         </div>
       </div>
     </section>
-    <section class="wrapper">
+    <section class="wrapper wrapper_responsive">
       <div class="container container_row container_responsive">
-        <img src="img/wrapper/macbook.png" alt="macbook" class="image image_macbook">
+        <img src="img/wrapper/macbook.png" alt="Macbook" class="image image_macbook">
         <article class="article">
           <div class="article__label">
             New design
@@ -161,7 +163,7 @@
             </div>
           </article>
         </div>
-        <div class="container container_row">
+        <div class="container container_row container_margin-top">
           <img src="img/logos/partner-logo-1.svg" alt="Hits" class="image image_logo">
           <img src="img/logos/partner-logo-4.svg" alt="RVLVR" class="image image_logo">
           <img src="img/logos/partner-logo-5.svg" alt="Eatfinder" class="image image_logo">
@@ -185,9 +187,8 @@
             semper.
           </div>
         </article>
-        <div class="browser">
-          <div class="browser_background">
-          </div>
+        <img src="img/browser/browser.png" alt="Browser">
+        <div class="colored-line_browser-content">
         </div>
       </div>
     </section>
@@ -201,15 +202,15 @@
             Over 1000 designers are using ...
           </div>
         </article>
-        <form action="#" method="post" class="registration">
-          <input type="text" placeholder="Full name" required class="registration__input">
-          <input type="email" placeholder="Your email" required class="registration__input">
-          <input type="text" placeholder="Password" required class="registration__input">
-          <div class="registration__button-container">
-            <div class="registration__label">
+        <form action="#" method="post" class="registration-form" oninput="checkRegistration()">
+          <input type="text" placeholder="Full name" required class="registration-form__input">
+          <input type="email" placeholder="Your email" required class="registration-form__input">
+          <input type="password" placeholder="Password" required class="registration-form__input">
+          <div class="registration-form__button-container">
+            <div class="registration-form__label">
               30 days free trial for all.
             </div>
-            <button class="button button_registration">
+            <button class="button button_registration button_disabled" type="submit">
               Try now
             </button>
           </div>
@@ -224,7 +225,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container container_row">
+    <div class="container container_row container_footer">
       <div class="links-section">
         <div class="links-section__title">
           Start <span class="links-section__title_with-background">Ex</span>
@@ -267,13 +268,13 @@
         <div class="links-section__title">
           Get Newsletter
         </div>
-        <form action="#" method="post" class="links-section__send-form">
-          <input type="text" placeholder="Email" class="links-section__input">
-          <button class="button button_send">
+        <form action="#" method="post" class="links-section__send-form" oninput="checkSend()">
+          <input type="email" placeholder="Email" class="links-section__input" required>
+          <button class="button button_send button_disabled" type="submit">
             <img src="img/footer/send.svg" alt="send" class="image image_send">
           </button>
         </form>
-        <div class="container container_row container_no-margin">
+        <div class="container container_row container_contacts">
           <a href="#" class="links-section__link">
             <img src="img/contacts/dribbble.svg" alt="dribbble" class="image image_contact">
           </a>
@@ -289,7 +290,14 @@
         </div>
       </div>
     </div>
+    <div>
+      <div class="colored-part_on-left-pink">
+      </div>
+    </div>
   </footer>
+  <script src="js/video.js"></script>
+  <script src="js/makeAbleRegistration.js"></script>
+  <script src="js/makeAbleSend.js"></script>
 </body>
 
 </html>

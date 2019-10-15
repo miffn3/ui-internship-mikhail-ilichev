@@ -1,0 +1,37 @@
+.colored-line {
+  &_browser-content {
+    position: absolute;
+    bottom: 0;
+    width: 768px;
+    height: 322px;
+    background-color: $color-browser-background;
+  }
+
+  &_two-lines-block {
+    position: relative;
+    width: 40%;
+    background-color: $color-secondary-background-colored-line;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(135deg, transparent 55%, #ff6d6d 50%);
+    }
+  }
+}
+
+@include for-laptop-l-landscape {
+  .colored-line_two-lines-block::before {
+    background: linear-gradient(123deg, transparent 55%, #ff6d6d 50%);
+  }
+}
+
+@include for-laptop-up {
+  .colored-line_two-lines-block::before {
+    background: linear-gradient(123deg, transparent 70%, #ff6d6d 50%);
+  }
+}
