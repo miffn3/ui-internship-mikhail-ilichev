@@ -4,25 +4,22 @@
   display: flex;
 
   &__item {
-    font-family: "Playfair Display";
-    font-size: 14px;
-    font-weight: 400;
+    @include font-settings("Playfair Display", 14px, 400, null);
     margin-left: 100px;
     line-height: 24px;
     text-decoration: none;
     color: $color-text-primary;
+
     &:hover {
       opacity: .5;
     }
   }
 
   &__item_logo {
+    @include font-settings(Inconsolata, 30px, 700, null);
     margin-left: 0;
     margin-right: auto;
     color: $color-text-logo-primary;
-    font-family: Inconsolata;
-    font-weight: 700;
-    font-size: 30px;
     letter-spacing: 6px;
   }
 

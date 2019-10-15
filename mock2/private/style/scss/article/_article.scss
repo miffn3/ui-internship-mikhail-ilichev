@@ -1,10 +1,8 @@
 .article {
+  @include font-settings("Playfair Display", 14px, 400, null);
   max-width: 420px;
   margin: 0 10px;
   color: $color-text-primary;
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
 
   &_introduction {
     max-width: 100%;
@@ -23,12 +21,10 @@
   }
 
   &__label {
+    @include font-settings(Ubuntu, null, 300, uppercase);
     display: block;
     margin-bottom: 28px;
     color: $color-text-label-primary;
-    font-family: Ubuntu;
-    font-weight: 300;
-    text-transform: uppercase;
     text-decoration: none;
   }
 
@@ -38,7 +34,8 @@
     font-size: 30px;
     color: $color-text-primary;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       opacity: .5;
     }
   }
@@ -69,4 +66,4 @@
       margin: 0;
     }
   }
-};
+}

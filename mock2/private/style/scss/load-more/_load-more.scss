@@ -1,14 +1,12 @@
 .load-more {
-  cursor: pointer;
+  @include font-settings("Playfair Display", 20px, 400, null);
   margin: 0 auto;
   padding: 21px 34px;
-  color: $color-text-primary;
-  background: inherit;
   border: 1px solid $color-text-primary;
-  font-family: "Playfair Display";
-  font-size: 20px;
-  font-weight: 400;
+  cursor: pointer;
+  background: inherit;
   line-height: 24px;
+  color: $color-text-primary;
 
   &:hover {
     opacity: .5;
