@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+
+  &__text {
+    @include font-settings("Playfair Display", 14px, 400, null);
+    margin-right: 10px;
+    color: $color-text-logo-primary;
+    line-height: 24px;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__icon {
+    width: 14px;
+    margin-right: 10px;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__part {
+    display: flex;
+    align-items: flex-end;
+  }
+}

@@ -1,0 +1,14 @@
+.load-more {
+  @include font-settings("Playfair Display", 20px, 400, null);
+  margin: 0 auto;
+  padding: 21px 34px;
+  border: 1px solid $color-text-primary;
+  cursor: pointer;
+  background: inherit;
+  line-height: 24px;
+  color: $color-text-primary;
+
+  &:hover {
+    opacity: .5;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin for-tablet-landscape-down {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin font-settings($family, $size, $weight, $transform) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $transform;
+}

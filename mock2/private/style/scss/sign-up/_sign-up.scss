@@ -1,0 +1,52 @@
+.sign-up {
+  padding: 0;
+  height: 287px;
+  background-color: $color-background-secondary;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+
+  &__title {
+    margin-top: 70px;
+    color: $color-text-sign-up-primary;
+    font-size: 30px;
+    letter-spacing: .75px;
+    text-align: center;
+  }
+
+  &__sending-form {
+    display: flex;
+    margin-top: 80px;
+    max-width: 400px;
+    border-bottom: 1px solid $color-text-logo-primary;
+  }
+
+  &__input {
+    @include font-settings("Playfair Display", 14px, 400, null);
+    flex-grow: 1;
+    border: none;
+    background: inherit;
+    width: auto;
+    color: $color-text-primary;
+    line-height: 24px;
+    outline: none;
+  }
+
+  &__send {
+    margin-left: auto;
+    border: none;
+    background: inherit;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 17px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
