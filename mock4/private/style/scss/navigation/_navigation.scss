@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+
+  &__item {
+    @include font-header;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

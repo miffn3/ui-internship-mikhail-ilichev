@@ -1,0 +1,40 @@
+.note {
+  padding-bottom: 30px;
+
+  &__title {
+    @include font-note-title;
+    color: $color-text-title-primary;
+
+    &_large {
+      @include font-note-title-large;
+    }
+
+    &_underlined {
+      &::after {
+        width: 64px;
+        border-bottom: 2px solid $color-secondary;
+      }
+    }
+
+    &_inverted-color {
+      color: $color-inverted;
+      border-color: $color-inverted;
+    }
+  }
+
+  &__text {
+    &_medium {
+      @include font-text-medium;
+    }
+
+    &_inverted-color {
+      color: $color-inverted;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    width: 175px;
+    height: 60px;
+  }
+}

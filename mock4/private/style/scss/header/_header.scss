@@ -1,0 +1,19 @@
+.header {
+  background-color: $color-background-secondary;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 150px;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    margin-right: auto;
+    width: 79px;
+    height: 27px;
+  }
+}
