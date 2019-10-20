@@ -1,0 +1,65 @@
+.offer {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 340px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__tariff {
+    @include flex-center;
+    @include font-note-title;
+    height: 59px;
+    border-bottom: 1px solid $color-inverted;
+    background-color: $color-background-offer;
+    color: $color-inverted;
+  }
+
+  &__price {
+    @include font-text-price;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    background-color: $color-background-offer;
+    color: $color-inverted;
+    text-align: center;
+    font-size: 94px;
+
+    &_dollar {
+      margin-bottom: 12px;
+      font-size: 35px;
+    }
+  }
+
+  &__duration {
+    @include flex-center;
+    @include font-default;
+    height: 50px;
+    background-color: $color-background-offer;
+    color: $color-text-primary;
+    font-style: italic;
+  }
+
+  &__popularity {
+    @include flex-center;
+    @include font-offer-popularity;
+    border: 2.5px solid $color-secondary;
+    background-color: $color-secondary;
+    color: $color-inverted;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    @include flex-center;
+    @include font-default;
+    background-color: $color-inverted;
+    height: 40px;
+    color: $color-text-primary;
+    text-transform: uppercase;
+  }
+}

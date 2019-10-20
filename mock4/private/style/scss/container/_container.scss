@@ -1,17 +1,35 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 24px;
+
+  &_column {
+    flex-direction: column;
+  }
 
   &_header {
     height: 70px;
   }
 
-  &_row {
-    flex-direction: row;
+  &_sub-list-notes {
+    margin: 0;
+    max-width: 420px; 
+  }
+
+  &_sub-list {
+    margin-top: 40px;
+  }
+
+  &_topics {
+    margin-top: 80px;
+  }
+
+  &_comments {
+    margin-top: 50px;
   }
 }

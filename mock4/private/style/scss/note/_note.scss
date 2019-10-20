@@ -1,8 +1,37 @@
 .note {
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &_large {
+    width: 515px;
+  }
+
+  &_centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  &_sub-list {
+    align-self: flex-start;
+  }
+
+  &_standart-picture-section {
+    max-width: 470px;
+  }
+
+  &_small {
+    margin-right: 10px;
+    max-width: 360px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   &__title {
     @include font-note-title;
+    position: relative;
     color: $color-text-title-primary;
 
     &_large {
@@ -10,7 +39,13 @@
     }
 
     &_underlined {
+      padding-bottom: 30px;
+
       &::after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: 64px;
         border-bottom: 2px solid $color-secondary;
       }
@@ -18,17 +53,39 @@
 
     &_inverted-color {
       color: $color-inverted;
-      border-color: $color-inverted;
+
+      &::after {
+        border-color: $color-inverted;
+      }
+    }
+
+    &_centered {
+      &::after {
+        left: calc(50% - 32px);
+      }
     }
   }
 
   &__text {
+    @include font-default;
+    color: $color-text-primary;
+
     &_medium {
       @include font-text-medium;
+      line-height: 23px;
     }
 
     &_inverted-color {
+      opacity: .8;
       color: $color-inverted;
+    }
+
+    &_wide {
+      margin-right: 50px;
+    }
+
+    &_under-line {
+      margin-top: 30px;
     }
   }
 

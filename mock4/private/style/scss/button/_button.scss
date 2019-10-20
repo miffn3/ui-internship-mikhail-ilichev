@@ -1,5 +1,42 @@
-.button{
+.button {
+  @include font-button;
+  padding: 10px 0;
+  border-radius: 2px;
+  border: 2px solid $color-secondary;
+  background-color: $color-secondary;
+  cursor: pointer;
+  color: $color-inverted;
+
   &_transparent {
-    
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid $color-inverted;
+  }
+
+  &_contact-form {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 40px;
+  }
+
+  &_download-in-tab {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 50px;
+  }
+
+  &_full-width {
+    width: 100%;
+  }
+
+  &_tab {
+
+  }
+
+  &:hover {
+    opacity: .8;
   }
 }

@@ -1,0 +1,22 @@
+.image-container {
+  border-radius: 50%;
+  border: 2px solid #ff893e;
+
+  &_small {
+    padding: 7px 9px;
+    margin-right: 30px;
+  }
+
+  &_medium {
+    padding: 14px 16px;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    width: 19px;
+
+    &_medium {
+      width: 35px;
+    }
+  }
+}

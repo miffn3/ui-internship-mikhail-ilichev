@@ -1,7 +1,59 @@
 .wrapper {
   &_registration {
-    background-image: url("../../../public/img/background.png");
+    background-image: url("../../../public/img/background/background.png");
     background-size: cover;
     background-position: center;
+    background-color: $color-background-secondary;
   }
-}
+
+  &_bottom-shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &_colored {
+    background-color: $color-background-primary;
+  }
+
+  &_download {
+    background-image: url("../../../public/img/background/background_download.png");
+    background-size: cover;
+    background-position: center;
+    background-color: $color-background-secondary;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 150px;
+    box-sizing: border-box;
+
+    &_social-networks {
+      padding: 0 150px;
+    }
+
+    &_column {
+      flex-direction: column;
+    }
+  }
+};
+
+@include padding-breakpoint {
+  .wrapper {
+    &__content {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+  }
+};
+
+@include for-vertical-tablet {
+  .wrapper {
+    &__content {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+};
