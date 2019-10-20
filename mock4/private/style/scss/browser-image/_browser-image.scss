@@ -1,0 +1,5 @@
+.browser-image {
+  @include for-vertical-tablet {
+    max-width: 50%;
+  }
+}
