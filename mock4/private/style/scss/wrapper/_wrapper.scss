@@ -1,6 +1,6 @@
 .wrapper {
   &_registration {
-    background-image: url("../../../public/img/background/background.png");
+    background-image: url("../../img/background/background.png");
     background-size: cover;
     background-position: center;
     background-color: $color-background-secondary;
@@ -15,7 +15,7 @@
   }
 
   &_download {
-    background-image: url("../../../public/img/background/background_download.png");
+    background-image: url("../../img/background/background_download.png");
     background-size: cover;
     background-position: center;
     background-color: $color-background-secondary;
