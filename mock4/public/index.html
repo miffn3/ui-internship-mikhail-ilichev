@@ -21,6 +21,9 @@
           Features
         </a>
         <a href="#" class="navigation__item">
+          About
+        </a>
+        <a href="#" class="navigation__item">
           Pricing
         </a>
         <a href="#" class="navigation__item">
@@ -45,17 +48,21 @@
             euismod bibendum laoreet. Proin gravida dolor sit amet lacus
             accumsan et viverra justo commodo.
           </div>
-          <button class="button button_transparent">
+          <a href="modulepatterns.pdf" download class="button button_transparent">
             Download
-          </button>
+          </a>
         </article>
         <form action="#" method="post" class="registration-form" autocomplete="on">
           <div class="registration-form__title">
             Try Your<span class="registration-form__title_colored">&nbsp;free&nbsp;</span>Trial Today
           </div>
-          <input type="text" class="registration-form__input" placeholder="Name" required autocomplete="on">
-          <input type="email" class="registration-form__input" placeholder="Email" required autocomplete="on">
-          <input type="password" class="registration-form__input registration-form__input_password" placeholder="Password" required autocomplete="on">
+          <input type="text" name="name" class="registration-form__input" placeholder="Name" required
+            pattern="[a-zA-Z]+" title="At least 1 character, only latin letters">
+          <input type="email" name="email" class="registration-form__input" placeholder="Email" required
+            autocomplete="on">
+          <input type="password" name="password" class="registration-form__input registration-form__input_password"
+            placeholder="Password" required pattern="(?=.*\d)(?=.\W+)(?=.[a-z])(?=.*[A-Z]).{6,}"
+            title="Min 6 characters, required: 1 capital letter, 1 lower-case letter, 1 digit, 1 special character.">
           <button type="submit" class="button button_full-width">
             Get Started
           </button>
@@ -68,7 +75,7 @@
           <h2 class="note__title">
             Social Media
           </h2>
-          <div class="note__text">
+          <div class="note__text note__text_social-networks">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Aenean euismod bibendum laoreet.
           </div>
@@ -107,80 +114,85 @@
     <section class="wrapper wrapper_colored">
       <div class="wrapper__content">
         <div class="tabs">
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'tabs__content tabs__content_tab-1')">Tab 1</button>
-            <button class="tablinks" onclick="openTab(event, 'tabs__content tabs__content_tab-2')">Tab 2</button>
-            <button class="tablinks" onclick="openTab(event, 'tabs__content tabs__content_tab-3')">Tab 3</button>
-          </div>
+          <input id="tabs__button_tab-1" type="radio" name="tabs" class="tabs__button tabs__button_tab-1" checked>
+          <label for="tabs__button_tab-1" class="tabs__label tabs__label_tab-1">Tab 1</label>
 
-          <!-- Tab content -->
+          <input id="tabs__button_tab-2" type="radio" name="tabs" class="tabs__button tabs__button_tab-2">
+          <label for="tabs__button_tab-2" class="tabs__label tabs__label_tab-2">Tab 2</label>
+
+          <input id="tabs__button_tab-3" type="radio" name="tabs" class="tabs__button tabs__button_tab-3">
+          <label for="tabs__button_tab-3" class="tabs__label tabs__label_tab-3">Tab 3</label>
+
           <div class="tabs__content tabs__content_tab-1">
-            <article class="note">
+            <article class="note note_in-tab">
               <h2 class="note__title">
                 Tabs with soft transitioning effect.
               </h2>
-              <div class="note__text">
+              <div class="note__text note__text_in-tab">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                 penatibus et magnis dis parturient montes.
-
+              </div>
+              <div class="note__text note__text_second-part">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet.
               </div>
-              <button class="button button_download-in-tab">
+              <a href="modulepatterns.pdf" class="button button_download-in-tab" download>
                 Download
-              </button>
+              </a>
             </article>
-            <img src="img/mirrored_city.png" alt="mirrored city">
+            <img src="img/mirrored_city.png" alt="mirrored city" class="tabs__picture">
           </div>
 
           <div class="tabs__content tabs__content_tab-2">
-            <article class="note">
+            <article class="note note_in-tab">
               <h2 class="note__title">
                 Tabs with soft transitioning effect.
               </h2>
-              <div class="note__text">
+              <div class="note__text note__text_in-tab">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                 penatibus et magnis dis parturient montes.
-
+              </div>
+              <div class="note__text note__text_second-part">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet.
               </div>
-              <button class="button button_download-in-tab">
+              <a href="modulepatterns.pdf" class="button button_download-in-tab" download>
                 Download
-              </button>
+              </a>
             </article>
-            <img src="img/mirrored_city.png" alt="mirrored city">
+            <img src="img/mirrored_city.png" alt="mirrored city" class="tabs__picture">
           </div>
 
           <div class="tabs__content tabs__content_tab-3">
-            <article class="note">
+            <article class="note note_in-tab">
               <h2 class="note__title">
                 Tabs with soft transitioning effect.
               </h2>
-              <div class="note__text">
+              <div class="note__text note__text_in-tab">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                 penatibus et magnis dis parturient montes.
-
+              </div>
+              <div class="note__text note__text_second-part">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum laoreet.
               </div>
-              <button class="button button_download-in-tab">
+              <a href="modulepatterns.pdf" class="button button_download-in-tab" download>
                 Download
-              </button>
+              </a>
             </article>
-            <img src="img/mirrored_city.png" alt="mirrored city">
+            <img src="img/mirrored_city.png" alt="mirrored city" class="tabs__picture">
           </div>
         </div>
       </div>
     </section>
     <section class="wrapper">
-      <div class="wrapper__content">
+      <div class="wrapper__content  wrapper__content_image-left">
         <img src="img/in-browser/image_left_sub_list_u260.png" alt="city in browser" class="browser-image">
         <div class="container container_sub-list-notes container_column">
           <article class="note note_sub-list">
@@ -198,10 +210,10 @@
               <img src="img/articles/upload.svg" alt="upload" class="image-container__image">
             </div>
             <article class="note">
-              <h3 class="note__title">
+              <h3 class="note__title note__title_small">
                 Title
               </h3>
-              <div class="note__text">
+              <div class="note__text note__text_with-picture">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Aenean euismod bibendum laoreet.
               </div>
@@ -212,10 +224,10 @@
               <img src="img/articles/download.svg" alt="download" class="image-container__image">
             </div>
             <article class="note">
-              <h3 class="note__title">
+              <h3 class="note__title note__title_small">
                 Title
               </h3>
-              <div class="note__text">
+              <div class="note__text note__text_with-picture">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Aenean euismod bibendum laoreet. Proin gravida dolor
                 sit amet lacus accumsan et viverra justo commodo.
@@ -226,7 +238,7 @@
       </div>
     </section>
     <section class="wrapper wrapper_colored">
-      <div class="wrapper__content">
+      <div class="wrapper__content wrapper__content_image-right">
         <article class="note note_standart-picture-section">
           <h2 class="note__title note__title_underlined">
             Standard Picture Section
@@ -236,12 +248,13 @@
             euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
             et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
             natoque penatibus et magnis dis parturient montes.
-
+          </div>
+          <div class="note__text note__text_second-part">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
             bibendum laoreet.
           </div>
         </article>
-        <img src="img/in-browser/image_right_standard_u262.png" alt="">
+        <img src="img/in-browser/image_right_standard_u262.png" alt="city" class="browser-image">
       </div>
     </section>
     <section class="wrapper">
@@ -263,7 +276,7 @@
             <h3 class="note__title">
               Thoughtful Design
             </h3>
-            <div class="note__text">
+            <div class="note__text note__text_small">
               Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Aenean euismod bibendum laoreet. Proin gravida
               dolor sit amet lacus accumsan et viverra.
@@ -277,7 +290,7 @@
             <h3 class="note__title">
               Well Crafted
             </h3>
-            <div class="note__text">
+            <div class="note__text note__text_small">
               Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Aenean euismod bibendum laoreet. Proin gravida
               dolor sit amet lacus accumsan et viverra.
@@ -291,7 +304,7 @@
             <h3 class="note__title">
               Easy to Customize
             </h3>
-            <div class="note__text">
+            <div class="note__text note__text_small">
               Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Aenean euismod bibendum laoreet. Proin gravida
               dolor sit amet lacus accumsan et viverra.
@@ -498,9 +511,9 @@
             Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
           </div>
         </article>
-        <button class="button button_transparent">
+        <a href="modulepatterns.pdf" download class="button button_transparent">
           Download
-        </button>
+        </a>
       </div>
     </section>
     <section class="wrapper">
@@ -516,11 +529,14 @@
         <form action="#" class="contact-form" autocomplete="on">
           <div class="contact-form__content">
             <div class="contact-form__inputs-column">
-              <input type="text" placeholder="Name" class="contact-form__input" required>
-              <input type="email" placeholder="Email" class="contact-form__input" required autocomplete="on">
-              <input type="text" placeholder="Subject" class="contact-form__input" required>
+              <input type="text" name="name" placeholder="Name" class="contact-form__input" required minlength="1"
+                pattern="[a-zA-Z]+" title="At least 1 character, only latin letters">
+              <input type="email" name="email" placeholder="Email" class="contact-form__input" required
+                autocomplete="on">
+              <input type="text" name="subject" placeholder="Subject" class="contact-form__input" required minlength="1"
+                maxlength="250" title="Min length - 1, Max length - 250, any characters">
             </div>
-            <textarea type="text" placeholder="Message" class="contact-form__input contact-form__input_message"
+            <textarea placeholder="Message" class="contact-form__input contact-form__input_message"
               required></textarea>
           </div>
           <button type="submit" class="button button_contact-form">
@@ -566,7 +582,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/open-tab.js"></script>
 </body>
 
 </html>

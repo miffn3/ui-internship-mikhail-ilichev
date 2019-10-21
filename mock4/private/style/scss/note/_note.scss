@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  line-height: 20px;
 
   &_large {
+    margin-right: 10px;
     width: 515px;
+    line-height: 42px;
   }
 
   &_centered {
@@ -17,16 +20,24 @@
   }
 
   &_standart-picture-section {
+    margin-top: 30px;
     max-width: 470px;
+    align-self: flex-start;
   }
 
   &_small {
-    margin-right: 10px;
-    max-width: 360px;
+    margin-right: 80px;
+    max-width: 370px;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &_in-tab {
+    margin-right: 100px;
+    max-width: 480px;
+    width: 100%;
   }
 
   &__title {
@@ -36,6 +47,10 @@
 
     &_large {
       @include font-note-title-large;
+    }
+
+    &_small {
+      @include font-default;
     }
 
     &_underlined {
@@ -87,11 +102,50 @@
     &_under-line {
       margin-top: 30px;
     }
+
+    &_social-networks {
+      margin-top: 12px;
+    }
+
+    &_in-tab {
+      margin-top: 50px;
+    }
+
+    &_small {
+      margin-top: 25px;
+    }
+
+    &_with-picture {
+      margin-top: 10px;
+    }
+
+    &_second-part {
+      margin-top: 14px;
+    }
   }
 
   &__logo {
     margin-bottom: 30px;
     width: 175px;
     height: 60px;
+  }
+}
+@include padding-breakpoint {
+  .note {
+    &_small {
+      margin-right: 40px;
+    }
+  }
+}
+
+@include for-vertical-tablet {
+  .note {
+    &_small {
+      margin-right: 10px;
+    }
+
+    &_in-tab {
+      margin-right: 50px;
+    }
   }
 }

@@ -1,11 +1,13 @@
 .button {
   @include font-button;
   padding: 10px 0;
-  border-radius: 2px;
+  border-radius: 4px;
   border: 2px solid $color-secondary;
   background-color: $color-secondary;
   cursor: pointer;
   color: $color-inverted;
+  text-decoration: none;
+  line-height: initial;
 
   &_transparent {
     margin-top: 40px;
@@ -14,29 +16,54 @@
     border-radius: 0;
     background-color: transparent;
     border: 2px solid $color-inverted;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
   }
 
   &_contact-form {
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 40px;
+
+    &:hover {
+      border-color: $color-background-secondary;
+      background-color: $color-background-secondary;
+    }
   }
 
   &_download-in-tab {
     padding-left: 22px;
     padding-right: 22px;
     margin-top: 50px;
+
+    &:hover {
+      border-color: $color-background-secondary;
+      background-color: $color-background-secondary;
+    }
   }
 
   &_full-width {
     width: 100%;
-  }
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 
-  &_tab {
-
+    &:hover {
+      border-color: $color-background-secondary;
+      background-color: $color-background-secondary;
+    }
   }
 
   &:hover {
     opacity: .8;
+  }
+}
+
+@include for-vertical-tablet {
+  .button {
+    &_download-in-tab {
+      margin-top: 20px;
+    }
   }
 }
