@@ -1,0 +1,151 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 20px;
+
+  &_large {
+    margin-right: 10px;
+    width: 515px;
+    line-height: 42px;
+  }
+
+  &_centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  &_sub-list {
+    align-self: flex-start;
+  }
+
+  &_standart-picture-section {
+    margin-top: 30px;
+    max-width: 470px;
+    align-self: flex-start;
+  }
+
+  &_small {
+    margin-right: 80px;
+    max-width: 370px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_in-tab {
+    margin-right: 100px;
+    max-width: 480px;
+    width: 100%;
+  }
+
+  &__title {
+    @include font-note-title;
+    position: relative;
+    color: $color-text-title-primary;
+
+    &_large {
+      @include font-note-title-large;
+    }
+
+    &_small {
+      @include font-default;
+    }
+
+    &_underlined {
+      padding-bottom: 30px;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 64px;
+        border-bottom: 2px solid $color-secondary;
+      }
+    }
+
+    &_inverted-color {
+      color: $color-inverted;
+
+      &::after {
+        border-color: $color-inverted;
+      }
+    }
+
+    &_centered {
+      &::after {
+        left: calc(50% - 32px);
+      }
+    }
+  }
+
+  &__text {
+    @include font-default;
+    color: $color-text-primary;
+
+    &_medium {
+      @include font-text-medium;
+      line-height: 23px;
+    }
+
+    &_inverted-color {
+      opacity: .8;
+      color: $color-inverted;
+    }
+
+    &_wide {
+      margin-right: 50px;
+    }
+
+    &_under-line {
+      margin-top: 30px;
+    }
+
+    &_social-networks {
+      margin-top: 12px;
+    }
+
+    &_in-tab {
+      margin-top: 50px;
+    }
+
+    &_small {
+      margin-top: 25px;
+    }
+
+    &_with-picture {
+      margin-top: 10px;
+    }
+
+    &_second-part {
+      margin-top: 14px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    width: 175px;
+    height: 60px;
+  }
+}
+@include padding-breakpoint {
+  .note {
+    &_small {
+      margin-right: 40px;
+    }
+  }
+}
+
+@include for-vertical-tablet {
+  .note {
+    &_small {
+      margin-right: 10px;
+    }
+
+    &_in-tab {
+      margin-right: 50px;
+    }
+  }
+}

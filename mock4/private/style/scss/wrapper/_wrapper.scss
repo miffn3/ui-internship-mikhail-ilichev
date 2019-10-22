@@ -1,0 +1,86 @@
+.wrapper {
+  position: relative;
+
+  &_registration {
+    background-image: url("../../img/background/background.png");
+    background-size: cover;
+    background-position: center;
+    background-color: $color-background-secondary;
+  }
+
+  &_bottom-shadow {
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &_colored {
+    background-color: $color-background-primary;
+  }
+
+  &_download {
+    background-image: url("../../img/background/background_download.png");
+    background-size: cover;
+    background-position: center;
+    background-color: $color-background-secondary;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 150px;
+    box-sizing: border-box;
+
+    &_social-networks {
+      padding: 22px 150px;
+    }
+
+    &_column {
+      flex-direction: column;
+    }
+
+    &_image-left {
+      padding: 100px 150px 100px 110px;
+    }
+
+    &_image-right {
+      padding: 100px 110px 100px 150px;
+    }
+  }
+};
+
+@include padding-breakpoint {
+  .wrapper {
+    &__content {
+      padding-left: 75px;
+      padding-right: 75px;
+
+      &_image-left {
+        padding-left: 40px;
+      }
+
+      &_image-right {
+        padding-right: 40px;
+      }
+    }
+  }
+};
+
+@include for-vertical-tablet {
+  .wrapper {
+    &__content {
+      padding-left: 50px;
+      padding-right: 50px;
+
+      &_image-left {
+        padding-left: 25px;
+      }
+
+      &_image-right {
+        padding-right: 25px;
+      }
+    }
+  }
+};

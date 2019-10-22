@@ -1,0 +1,25 @@
+.author {
+  display: flex;
+  margin-top: 10px;
+
+  &__avatar {
+    margin-right: 15px;
+    height: 70px;
+    width: 70px;
+  }
+
+  &__name {
+    @include font-note-title;
+    color:$color-text-name;
+  }
+
+  &__description {
+    @include font-default;
+    color: $color-text-primary;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+  }
+}

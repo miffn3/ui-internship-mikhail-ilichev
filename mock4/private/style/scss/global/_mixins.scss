@@ -1,0 +1,80 @@
+@mixin font-header {
+  opacity: 0.69;
+  color: $color-text-header;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@mixin font-default {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@mixin font-note-title-large {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin font-note-title {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@mixin font-text-medium {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@mixin font-text-price {
+  font-family: Raleway;
+  font-size: 94px;
+  font-weight: 700;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-offer-popularity {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@mixin font-button {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@mixin font-small {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@mixin font-label {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@mixin padding-breakpoint {
+  @media screen and (min-width: 1024px) and (max-width: 1190px) {
+    @content;
+  }
+}
+
+@mixin for-vertical-tablet {
+  @media screen and(min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}

@@ -1,0 +1,17 @@
+.comment {
+  max-width: 270px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    @include font-default;
+    padding: 10px 10px 40px 10px;
+    background-image: url("../../img/comments/comment.png");
+    background-repeat: no-repeat;
+    color: $color-text-primary;
+    font-style: italic;
+  }
+}

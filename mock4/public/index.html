@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Mock4</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/css/reset.css">
+  <link rel="stylesheet" href="style/css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <img src="img/Logo.png" alt="AXIT" class="header__logo">
+      <div class="navigation">
+        <a href="#" class="navigation__item">
+          Features
+        </a>
+        <a href="#" class="navigation__item">
+          About
+        </a>
+        <a href="#" class="navigation__item">
+          Pricing
+        </a>
+        <a href="#" class="navigation__item">
+          Reviews
+        </a>
+        <a href="#" class="navigation__item">
+          Contact
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="wrapper wrapper_registration">
+      <div class="wrapper__content">
+        <article class="note note_large">
+          <img src="img/Logo.png" alt="AXIT" class="note__logo">
+          <h1 class="note__title note__title_large note__title_underlined note__title_inverted-color">
+            Modern axure template for beautiful prototypes
+          </h1>
+          <div class="note__text note__text_inverted-color note__text_wide note__text_under-line note__text_medium">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo.
+          </div>
+          <a href="modulepatterns.pdf" download class="button button_transparent">
+            Download
+          </a>
+        </article>
+        <form action="#" method="post" class="registration-form" autocomplete="on">
+          <div class="registration-form__title">
+            Try Your<span class="registration-form__title_colored">&nbsp;free&nbsp;</span>Trial Today
+          </div>
+          <input type="text" name="name" class="registration-form__input" placeholder="Name" required
+            pattern="[a-zA-Z]+" title="At least 1 character, only latin letters">
+          <input type="email" name="email" class="registration-form__input" placeholder="Email" required
+            autocomplete="on">
+          <input type="password" name="password" class="registration-form__input registration-form__input_password"
+            placeholder="Password" required pattern="(?=.*\d)(?=.\W+)(?=.[a-z])(?=.*[A-Z]).{6,}"
+            title="Min 6 characters, required: 1 capital letter, 1 lower-case letter, 1 digit, 1 special character.">
+          <button type="submit" class="button button_full-width">
+            Get Started
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="wrapper wrapper_bottom-shadow">
+      <div class="wrapper__content wrapper__content_social-networks">
+        <article class="note note_small">
+          <h2 class="note__title">
+            Social Media
+          </h2>
+          <div class="note__text note__text_social-networks">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet.
+          </div>
+        </article>
+        <div class="social-networks">
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/facebook.svg" alt="facebook"
+              class="social-networks__icon social-networks__icon_large">
+          </a>
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/twitter.svg" alt="twitter"
+              class="social-networks__icon social-networks__icon_large">
+          </a>
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/google-plus.svg" alt="google+"
+              class="social-networks__icon social-networks__icon_large">
+          </a>
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/pinterest.svg" alt="printerest"
+              class="social-networks__icon social-networks__icon_large">
+          </a>
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/instagram.svg" alt="instagram"
+              class="social-networks__icon social-networks__icon_large">
+          </a>
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/stumbleupon.svg" alt="stumbleupon"
+              class="social-networks__icon social-networks__icon_large">
+          </a>
+          <a href="#" class="social-networks__link">
+            <img src="img/social-networks/rss.svg" alt="RSS" class="social-networks__icon social-networks__icon_large">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper wrapper_colored">
+      <div class="wrapper__content">
+        <div class="tabs">
+          <input id="tabs__button_tab-1" type="radio" name="tabs" class="tabs__button tabs__button_tab-1" checked>
+          <label for="tabs__button_tab-1" class="tabs__label tabs__label_tab-1">Tab 1</label>
+
+          <input id="tabs__button_tab-2" type="radio" name="tabs" class="tabs__button tabs__button_tab-2">
+          <label for="tabs__button_tab-2" class="tabs__label tabs__label_tab-2">Tab 2</label>
+
+          <input id="tabs__button_tab-3" type="radio" name="tabs" class="tabs__button tabs__button_tab-3">
+          <label for="tabs__button_tab-3" class="tabs__label tabs__label_tab-3">Tab 3</label>
+
+          <div class="tabs__content tabs__content_tab-1">
+            <article class="note note_in-tab">
+              <h2 class="note__title">
+                Tabs with soft transitioning effect.
+              </h2>
+              <div class="note__text note__text_in-tab">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </div>
+              <div class="note__text note__text_second-part">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet.
+              </div>
+              <a href="modulepatterns.pdf" class="button button_download-in-tab" download>
+                Download
+              </a>
+            </article>
+            <img src="img/mirrored_city.png" alt="mirrored city" class="tabs__picture">
+          </div>
+
+          <div class="tabs__content tabs__content_tab-2">
+            <article class="note note_in-tab">
+              <h2 class="note__title">
+                Tabs with soft transitioning effect.
+              </h2>
+              <div class="note__text note__text_in-tab">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </div>
+              <div class="note__text note__text_second-part">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet.
+              </div>
+              <a href="modulepatterns.pdf" class="button button_download-in-tab" download>
+                Download
+              </a>
+            </article>
+            <img src="img/mirrored_city.png" alt="mirrored city" class="tabs__picture">
+          </div>
+
+          <div class="tabs__content tabs__content_tab-3">
+            <article class="note note_in-tab">
+              <h2 class="note__title">
+                Tabs with soft transitioning effect.
+              </h2>
+              <div class="note__text note__text_in-tab">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </div>
+              <div class="note__text note__text_second-part">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                bibendum laoreet.
+              </div>
+              <a href="modulepatterns.pdf" class="button button_download-in-tab" download>
+                Download
+              </a>
+            </article>
+            <img src="img/mirrored_city.png" alt="mirrored city" class="tabs__picture">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper">
+      <div class="wrapper__content  wrapper__content_image-left">
+        <img src="img/in-browser/image_left_sub_list_u260.png" alt="city in browser" class="browser-image">
+        <div class="container container_sub-list-notes container_column">
+          <article class="note note_sub-list">
+            <h2 class="note__title note__title_underlined">
+              Sub list section
+            </h2>
+            <div class="note__text note__text_under-line">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo.
+            </div>
+          </article>
+          <div class="container container_sub-list">
+            <div class="image-container image-container_small">
+              <img src="img/articles/upload.svg" alt="upload" class="image-container__image">
+            </div>
+            <article class="note">
+              <h3 class="note__title note__title_small">
+                Title
+              </h3>
+              <div class="note__text note__text_with-picture">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean euismod bibendum laoreet.
+              </div>
+            </article>
+          </div>
+          <div class="container container_sub-list">
+            <div class="image-container image-container_small">
+              <img src="img/articles/download.svg" alt="download" class="image-container__image">
+            </div>
+            <article class="note">
+              <h3 class="note__title note__title_small">
+                Title
+              </h3>
+              <div class="note__text note__text_with-picture">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean euismod bibendum laoreet. Proin gravida dolor
+                sit amet lacus accumsan et viverra justo commodo.
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper wrapper_colored">
+      <div class="wrapper__content wrapper__content_image-right">
+        <article class="note note_standart-picture-section">
+          <h2 class="note__title note__title_underlined">
+            Standard Picture Section
+          </h2>
+          <div class="note__text note__text_under-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+            et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+            natoque penatibus et magnis dis parturient montes.
+          </div>
+          <div class="note__text note__text_second-part">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet.
+          </div>
+        </article>
+        <img src="img/in-browser/image_right_standard_u262.png" alt="city" class="browser-image">
+      </div>
+    </section>
+    <section class="wrapper">
+      <div class="wrapper__content wrapper__content_column">
+        <article class="note note_centered">
+          <h2 class="note__title note__title_large note__title_underlined note__title_centered">
+            Why this is awesome
+          </h2>
+          <div class="note__text note__text_under-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </article>
+        <div class="container container_topics">
+          <article class="note note_centered note_small">
+            <div class="image-container image-container_medium">
+              <img src="img/articles/bulb.svg" alt="thought"
+                class="image-container__image image-container__image_medium">
+            </div>
+            <h3 class="note__title">
+              Thoughtful Design
+            </h3>
+            <div class="note__text note__text_small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Aenean euismod bibendum laoreet. Proin gravida
+              dolor sit amet lacus accumsan et viverra.
+            </div>
+          </article>
+          <article class="note note_centered note_small">
+            <div class="image-container image-container_medium">
+              <img src="img/articles/keyboard.svg" alt="keyboard"
+                class="image-container__image image-container__image_medium">
+            </div>
+            <h3 class="note__title">
+              Well Crafted
+            </h3>
+            <div class="note__text note__text_small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Aenean euismod bibendum laoreet. Proin gravida
+              dolor sit amet lacus accumsan et viverra.
+            </div>
+          </article>
+          <article class="note note_centered note_small">
+            <div class="image-container image-container_medium">
+              <img src="img/articles/power.svg" alt="power"
+                class="image-container__image image-container__image_medium">
+            </div>
+            <h3 class="note__title">
+              Easy to Customize
+            </h3>
+            <div class="note__text note__text_small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Aenean euismod bibendum laoreet. Proin gravida
+              dolor sit amet lacus accumsan et viverra.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper wrapper_colored">
+      <div class="wrapper__content wrapper__content_column">
+        <article class="note note_centered">
+          <h2 class="note__title note__title_large note__title_underlined note__title_centered">
+            Pricing options
+          </h2>
+          <div class="note__text note__text_under-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </article>
+        <div class="container container_topics">
+          <div class="offer">
+            <h3 class="offer__tariff">
+              Basic
+            </h3>
+            <div class="offer__price">
+              <span class="offer__price_dollar">$</span>
+              0
+            </div>
+            <div class="offer__duration">
+              Free for life
+            </div>
+            <div class="offer__popularity">
+
+            </div>
+            <div class="offer__content">
+              1 GB of space
+            </div>
+            <div class="offer__content">
+              10 GB of bandwidth
+            </div>
+            <div class="offer__content">
+              3 websites
+            </div>
+            <div class="offer__content">
+              Basic customization
+            </div>
+            <div class="offer__content">
+              Wordpress integration
+            </div>
+            <div class="offer__content">
+              Email support
+            </div>
+          </div>
+          <div class="offer">
+            <h3 class="offer__tariff">
+              Professional
+            </h3>
+            <div class="offer__price">
+              <span class="offer__price_dollar">$</span>
+              19
+            </div>
+            <div class="offer__duration">
+              Monthly payment
+            </div>
+            <div class="offer__popularity">
+              Our most popular
+            </div>
+            <div class="offer__content">
+              5 GB of space
+            </div>
+            <div class="offer__content">
+              50 GB of bandwidth
+            </div>
+            <div class="offer__content">
+              12 websites
+            </div>
+            <div class="offer__content">
+              Advanced customization
+            </div>
+            <div class="offer__content">
+              Wordpress integration
+            </div>
+            <div class="offer__content">
+              Email support
+            </div>
+          </div>
+          <div class="offer">
+            <h3 class="offer__tariff">
+              Enterprise
+            </h3>
+            <div class="offer__price">
+              <span class="offer__price_dollar">$</span>
+              70
+            </div>
+            <div class="offer__duration">
+              Monthly payment
+            </div>
+            <div class="offer__popularity">
+
+            </div>
+            <div class="offer__content">
+              Unlimited space
+            </div>
+            <div class="offer__content">
+              Unlimited bandwidth
+            </div>
+            <div class="offer__content">
+              100 websites
+            </div>
+            <div class="offer__content">
+              Advanced customization
+            </div>
+            <div class="offer__content">
+              Wordpress integration
+            </div>
+            <div class="offer__content">
+              24/7 customer support
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper">
+      <div class="wrapper__content wrapper__content_column">
+        <article class="note note_centered">
+          <h2 class="note__title note__title_large note__title_underlined note__title_centered">
+            What our customers are saying
+          </h2>
+          <div class="note__text note__text_under-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </article>
+        <div class="container container_comments">
+          <div class="comment">
+            <div class="comment__text">
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Doloribus
+              accusamus expedita repellat similique
+              odio aspernatur ex, architecto eaque
+              quo suscipit.
+            </div>
+            <div class="author">
+              <img src="img/comments/avatar.png" alt="avatar" class="author__avatar">
+              <div class="author__about">
+                <div class="author__name">
+                  Jeremy H.
+                </div>
+                <div class="author__description">
+                  Manager
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment__text">
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Doloribus
+              accusamus expedita repellat similique
+              odio aspernatur ex, architecto eaque
+              quo suscipit.
+            </div>
+            <div class="author">
+              <img src="img/comments/avatar.png" alt="avatar" class="author__avatar">
+              <div class="author__about">
+                <div class="author__name">
+                  John S.
+                </div>
+                <div class="author__description">
+                  Freelancer
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment__text">
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Doloribus
+              accusamus expedita repellat similique
+              odio aspernatur ex, architecto eaque
+              quo suscipit.
+            </div>
+            <div class="author">
+              <img src="img/comments/avatar.png" alt="avatar" class="author__avatar">
+              <div class="author__about">
+                <div class="author__name">
+                  Susan W.
+                </div>
+                <div class="author__description">
+                  Photografer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper wrapper_download">
+      <div class="wrapper__content wrapper__content_column">
+        <article class="note note_centered">
+          <h2
+            class="note__title note__title_large note__title_inverted-color note__title_underlined note__title_centered">
+            Stylish acure design
+          </h2>
+          <div class="note__text note__text_inverted-color note__text_under-line">
+            Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
+          </div>
+        </article>
+        <a href="modulepatterns.pdf" download class="button button_transparent">
+          Download
+        </a>
+      </div>
+    </section>
+    <section class="wrapper">
+      <div class="wrapper__content wrapper__content_column">
+        <article class="note note_centered">
+          <h2 class="note__title note__title_large note__title_underlined note__title_centered">
+            Contact us
+          </h2>
+          <div class="note__text note__text_under-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </article>
+        <form action="#" class="contact-form" autocomplete="on">
+          <div class="contact-form__content">
+            <div class="contact-form__inputs-column">
+              <input type="text" name="name" placeholder="Name" class="contact-form__input" required minlength="1"
+                pattern="[a-zA-Z]+" title="At least 1 character, only latin letters">
+              <input type="email" name="email" placeholder="Email" class="contact-form__input" required
+                autocomplete="on">
+              <input type="text" name="subject" placeholder="Subject" class="contact-form__input" required minlength="1"
+                maxlength="250" title="Min length - 1, Max length - 250, any characters">
+            </div>
+            <textarea placeholder="Message" class="contact-form__input contact-form__input_message"
+              required></textarea>
+          </div>
+          <button type="submit" class="button button_contact-form">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="social-networks">
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/facebook.svg" alt="facebook"
+            class="social-networks__icon social-networks__icon_medium">
+        </a>
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/twitter.svg" alt="twitter"
+            class="social-networks__icon social-networks__icon_medium">
+        </a>
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/google-plus.svg" alt="google+"
+            class="social-networks__icon social-networks__icon_medium">
+        </a>
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/pinterest.svg" alt="printerest"
+            class="social-networks__icon social-networks__icon_medium">
+        </a>
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/instagram.svg" alt="instagram"
+            class="social-networks__icon social-networks__icon_medium">
+        </a>
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/stumbleupon.svg" alt="stumbleupon"
+            class="social-networks__icon social-networks__icon_medium">
+        </a>
+        <a href="#" class="social-networks__link">
+          <img src="img/social-networks/rss.svg" alt="RSS" class="social-networks__icon social-networks__icon_medium">
+        </a>
+      </div>
+      <div class="footer__copyrights">
+        © 2015 Axure Themes
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
